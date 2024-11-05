@@ -1,0 +1,765 @@
+* {
+    font-family: "Roboto", sans-serif;
+  }
+  body {
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .top {
+    background-color: black;
+    color: white;
+    padding: 0rem 1rem;
+    font-weight: 300;
+    position: sticky;
+    max-width: 100%;
+    text-align: center;
+    display: flex;
+  }
+  .top div i {
+    font-size: 0.8rem;
+    position: absolute;
+    margin-left: 76.5rem;
+  }
+  .top .content {
+    margin: auto;
+    display: flex;
+    width: 100rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .top .content p {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .top a {
+    color: white;
+  }
+  
+  header {
+    height: 7rem;
+    display: flex;
+    max-width: 89rem;
+    margin: auto;
+  }
+  header nav {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    max-height: 7rem;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  
+  header .logo {
+    text-align: center;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: inline;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  header nav ul li {
+    text-align: center;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    transition: 0.3s;
+    padding: 0.5rem;
+  }
+  header nav ul li a:hover {
+    color: rgb(126, 126, 126);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: -1rem;
+  }
+  
+  .dropdown span {
+    font-size: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s;
+  }
+  .dropdown span i {
+    margin-right: 0.3rem;
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 0.5rem;
+    z-index: 1;
+    background-color: rgb(240, 240, 240);
+    padding: 0.5rem 1rem;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dropdown:hover .dropdown-content a {
+    padding: 0.5rem 2rem;
+    color: white;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    color: black;
+    max-width: 5rem;
+    transition: 0.5s;
+  }
+  .dropdown:hover .dropdown-content a:hover {
+    background-color: rgb(219, 219, 219);
+    transition: 0.5s;
+  }
+  header .search {
+    width: 38rem;
+  }
+  header .logo a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  header .search input {
+    padding: 1.2rem 3.5rem;
+    width: 100%;
+    margin-left: 2rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(240, 240, 240);
+    outline: none;
+  }
+  
+  header .search .search-icon {
+    position: absolute;
+    margin-left: 2.5rem;
+    text-align: center;
+    padding: 0.7rem;
+  }
+  header .search .search-icon i {
+    font-size: 1.2rem;
+    display: flex;
+    color: grey;
+  }
+  header .search {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  .icons {
+    margin-left: 1rem;
+    display: flex;
+  }
+  .icons i {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .hero {
+    max-width: 68%;
+    margin: auto;
+  
+    margin: auto;
+  }
+  
+  .hero .txt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0rem 0 0;
+  }
+  
+  .hero .txt p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.8;
+  }
+  .hero .txt a {
+    color: gray;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+  .hero .txt a:hover {
+    color: black;
+  }
+  
+  .filters {
+    border: 1px solid rgb(204, 202, 202);
+    max-width: 18rem;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+  .filters .filters-txt {
+    margin-top: -1.5rem;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    align-items: center;
+  }
+  
+  .filters .filters-txt h2 {
+    font-size: 1.6rem;
+  }
+  .hero {
+    list-style: none;
+    padding: 0;
+    margin-top: 2rem;
+    margin-bottom: 55rem;
+    max-width: 80rem;
+  }
+  .hero ul {
+    padding: 0;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding-bottom: 1rem;
+  }
+  
+  .hero li {
+    display: flex;
+  }
+  
+  .hero li a {
+    padding: 0.4rem;
+    color: gray;
+    text-decoration: none;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.3s;
+  }
+  .hero li a:hover {
+    color: black;
+  }
+  
+  .hero li a i {
+    margin-left: auto;
+  }
+  
+  .hero .price-txt {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    align-items: center;
+  }
+  .hero .price-txt i {
+    cursor: pointer;
+    padding: 0.6rem;
+  }
+  .hero .price h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+  }
+  
+  .hero .price i {
+    text-align: center;
+  }
+  .hero .price-txt {
+    display: flex;
+    justify-content: space-between;
+  }
+  .price input {
+    padding: 1rem;
+    width: 93%;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    accent-color: black;
+  
+    .range {
+      display: flex;
+      flex-direction: column;
+      width: 95%;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      pointer-events: all;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px #c6c6c6;
+      cursor: pointer;
+    }
+  }
+  
+  .filters .color-txt {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .filters .color-txt i {
+    cursor: pointer;
+  }
+  
+  .slidecontainer p {
+    margin-top: -1rem;
+    font-weight: 600;
+  }
+  
+  .filters .color input[type="checkbox"] {
+    width: 14%;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+    accent-color: transparent;
+  }
+  
+  .color {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .color-icon {
+    margin-left: 10px;
+    transform: rotate(270deg);
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  label {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 5px 0;
+    position: relative;
+    text-align: center;
+  }
+  
+  #color1 + label {
+    background-color: green;
+  }
+  #color2 + label {
+    background-color: red;
+  }
+  #color3 + label {
+    background-color: yellow;
+  }
+  #color4 + label {
+    background-color: orangered;
+  }
+  #color5 + label {
+    background-color: skyblue;
+  }
+  #color6 + label {
+    background-color: blue;
+  }
+  #color7 + label {
+    background-color: navy;
+  }
+  #color8 + label {
+    background-color: palevioletred;
+  }
+  #color9 + label {
+    background-color: white;
+    border: 1px solid rgb(204, 202, 202);
+  }
+  #color9 + label::after {
+    color: black;
+  }
+  #color10 + label {
+    background-color: black;
+  }
+  
+  input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    color: white;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .chrkbox-color1 {
+    display: flex;
+    justify-content: space-between;
+  }
+  .chrkbox-color2 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 202, 202);
+    padding-bottom: 2rem;
+  }
+  
+  .size {
+    max-width: 100%;
+  }
+  
+  .size .size-btns a {
+    color: black;
+    text-decoration: none;
+    padding: 0.7rem 2rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 99rem;
+    text-align: center;
+    transition: 0.4s;
+  }
+  .size .size-btns a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .size .size-btns {
+    display: flex;
+    gap: 0.8rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgb(204, 202, 202);
+  }
+  
+  .size .size-btns .size-btns1,
+  .size .size-btns .size-btns2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .dress-style ol {
+    padding: 0;
+  }
+  .hero button {
+    padding: 1rem 4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 99rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 1.1rem;
+  }
+  
+  .products {
+    position: absolute;
+    top: 0;
+    margin-top: 14rem;
+    margin-left: 22.5rem;
+    width: 42%;
+    padding: 1rem;
+  }
+  .products .heading {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .products .heading h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+  }
+  .products .heading p {
+    font-size: 1.1rem;
+    color: gray;
+  }
+  
+  .products .heading a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    font-weight: 500;
+  }
+  
+  .cards {
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+  }
+  .cards .card {
+    max-width: 30rem;
+    background-color: rgb(240, 240, 240);
+    border-radius: 1.3rem;
+    margin-bottom: 8rem;
+  }
+  
+  .cards .card .image-holder img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cards .details {
+    margin-top: -0rem;
+    position: absolute;
+  }
+  
+  .cards .details .item-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  
+  .cards .details .reviews {
+    margin-top: -1.5rem;
+    display: flex;
+    text-align: center;
+    gap: 0.2rem;
+    align-items: center;
+  }
+  .cards .details .reviews .rating-txt {
+    font-size: 0.8rem;
+  }
+  
+  .cards .details .price {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: -1.5rem;
+  }
+  
+  .cards .details .price-txt {
+    font-weight: 800;
+    font-size: 1.3rem;
+  }
+  
+  .cards .details .price .offer {
+    text-decoration: line-through;
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: grey;
+  }
+  
+  .cards .details .price .offer-percentage {
+    background-color: rgb(252, 235, 235);
+    padding: 0.2rem 0.7rem;
+    color: red;
+    border-radius: 99rem;
+    font-size: 0.8rem;
+  }
+  
+  .next-page-n-prev {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgb(204, 202, 202);
+    padding-top: 2rem;
+  }
+  
+  .next-page-n-prev .previous-btn,
+  .next-page-n-prev .next-btn {
+    border: 1px solid rgb(204, 202, 202);
+    padding: 0.8rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    transition: 0.4s;
+  }
+  
+  .next-page-n-prev .previous-btn:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  .next-page-n-prev .next-btn:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  
+  .next-page-n-prev a {
+    padding: 1rem;
+    text-decoration: none;
+    color: gray;
+    font-size: 1.1rem 1.2rem;
+    transition: 0.4s;
+    border-radius: 0.5rem;
+  }
+  .next-page-n-prev a:hover {
+    background-color: rgb(240, 240, 240);
+  }
+  .footer .footer-heading {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-left: 4.5rem;
+  }
+  
+  .footer .customer1 {
+    padding: 1.5rem;
+    border: 3px solid rgb(240, 240, 240);
+    border-radius: 2rem;
+  }
+  .footer .customer1 .name {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  .footer .customer1 .name p {
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .footer .customer1 .name i {
+    font-size: 1.2rem;
+    color: rgb(39, 204, 39);
+  }
+  .footer .customer1 #cus-msg {
+    color: rgb(158, 158, 158);
+    font-size: 1rem;
+    margin-top: -0.5rem;
+    line-height: 1.4rem;
+  }
+  
+  .send-email {
+    background-color: black;
+    width: 79rem;
+    margin: auto;
+    margin-top: -24rem;
+    color: white;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1.5rem;
+    position: absolute;
+    align-items: center;
+    left: 50%;
+    transform: translateX(-50%);   
+  }
+  
+  .send-email h3 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  
+  .l-email {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 20rem;
+  }
+  
+  .l-email input {
+    padding: 0.8rem 3rem;
+    max-width: 30rem;
+    border-radius: 6rem;
+    outline: none;
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    border: none;
+  }
+  .l-email .email-logo {
+    position: absolute;
+    margin-left: 1rem;
+    margin-top: 0.9rem;
+  }
+  
+  .l-email .email-logo i {
+    color: rgb(177, 175, 175);
+    font-size: 1.1rem;
+  }
+  
+  .l-email .footer-sub-button {
+    background-color: white;
+    padding: 0.6rem 3rem;
+    max-width: 30rem;
+    border-radius: 6rem;
+    outline: none;
+    font-size: 0.9rem;
+    color: #1f1f1f;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  footer .footer-content {
+    width: 82.8rem;
+    margin: auto;
+  }
+  footer .footer-main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  footer {
+    background-color: rgb(240, 240, 240);
+    margin-top: -20rem;
+    color: black;
+  }
+  
+  footer .f-txt h1 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    display: inline;
+  }
+  footer .f-txt p {
+    font-size: 1rem;
+    color: gray;
+    line-height: 1.3rem;
+    margin-top: 1.5rem;
+  }
+  footer .f-txt .sm-icons {
+    gap: 0.8rem;
+    display: flex;
+    margin-top: 2.4rem;
+  }
+  footer .f-txt .sm-icons i {
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  footer .f-info {
+    display: flex;
+    gap: 7rem;
+    margin-top: 7rem;
+  }
+  footer .f-info ul {
+    list-style: none;
+    margin-top: -0.4rem;
+  }
+  footer .f-info ul p {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  footer .f-info ul li a {
+    text-decoration: none;
+    color: gray;
+    line-height: 2.2rem;
+    font-size: 1rem;
+  }
+  footer .copyrite {
+    display: flex;
+    border-top: 1px solid rgb(204, 202, 202);
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    max-width: 100%;
+  }
+  footer .copyrite p {
+    font-size: 0.9rem;
+    color: gray;
+    margin-top: 2rem;
+  }
+  footer .copyrite .payment-icons {
+    gap: 1rem;
+    display: flex;
+    margin-top: 2rem;
+  }
