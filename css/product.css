@@ -140,6 +140,10 @@ header .logo a {
   color: black;
 }
 
+header .logo a i {
+  display: none;
+}
+
 header .search input {
   padding: 1.2rem 3.5rem;
   width: 100%;
@@ -160,7 +164,6 @@ header .search .search-icon {
 header .search .search-icon i {
   font-size: 1.2rem;
   display: flex;
-  color: grey;
 }
 header .search {
   display: flex;
@@ -175,6 +178,13 @@ header .search {
   font-size: 1.5rem;
   padding: 0.5rem;
   cursor: pointer;
+}
+.icons #search {
+  display: none;
+}
+.icons a {
+  text-decoration: none;
+  color: black;
 }
 
 .hero {
@@ -557,8 +567,6 @@ section .reviews1 .rbuttons #write-a-review {
   }
   .stars div {
     border: 1px solid black;
-
-    
   }
 
   .stars #dots {
